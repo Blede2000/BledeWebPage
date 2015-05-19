@@ -1,0 +1,72 @@
+img{
+	max-width: 100%;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+.cycle-slideshow{
+	width: 50%;
+	max-width: 960px;
+	display: block;
+	position: relative;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.slide{
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+/* Control Style*/
+
+.cycle-next{
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border-left: 25px solid #fff;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	z-index: 99999;
+	cursor: pointer;
+}
+.cycle-prev{
+	width: 0;
+	height: 0;
+	display: block;
+	position: absolute;
+	top: 92px;
+	right: 20px;
+	border-right: 25px solid #fff;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	z-index: 99999;
+	cursor: pointer;
+}
+.cycle-pager{
+	text-indent: -9999999px;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 30px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: 17px;
+	z-index: 99999;
+	color: white;
+	margin: 10px 0;
+}
+.cycle-pager span{
+	width: 31px;
+	height: 1px;
+	display: block;
+	background-color: rgba(255,255,255,0.50);
+	-webkit-transform: rotate(-45deg);
+	margin: 10px 0;
+}
+.cycle-pager .cycle-pager-active{
+	background-color: white;
+}
